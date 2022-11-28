@@ -1,15 +1,17 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Auto {
+export class Raton {
   @PrimaryGeneratedColumn()
   id: number;
   @Column()
-  marca: string;
+  nombre: string;
   @Column()
-  placa:number;
+  tipo: string;
   @Column()
-  pintura:string;
+  genero: string;
   @Column()
-  año:number;
+  peso: number;
+  @Column()
+  tamaño: number;
 }
